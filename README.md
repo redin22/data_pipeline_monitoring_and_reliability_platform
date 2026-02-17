@@ -6,7 +6,7 @@ Modern data pipelines can fail silently. Jobs may succeed and dashboards may ref
 
 This project implements a lightweight data reliability monitoring framework that detects structural and behavioral pipeline failures using a hybrid approach combining rule-based checks and statistical anomaly detection.
 
-Problem Statement
+## Problem Statement
 
 Data teams need a systematic way to:
   Detect if the pipeline is alive and data is arriving
@@ -15,7 +15,7 @@ Data teams need a systematic way to:
   Detect schema changes
   Classify severity and surface root causes
 
-Approach
+## Approach
 
 The monitoring framework is structured in layered components:
 
@@ -80,7 +80,7 @@ Statistical anomaly detection
 
 The system also produces explainable root cause labels for rapid investigation.
 
-Failure Scenarios Simulated
+## Failure Scenarios Simulated
 
 To validate robustness, the following failure modes are injected:
 
@@ -96,7 +96,7 @@ Schema drift (column modification)
 
 Each scenario is evaluated and classified accordingly.
 
-Output
+## Output
 
 The system produces a structured monitoring table containing:
 
@@ -109,3 +109,25 @@ Schema drift flag
 Final severity classification
 
 Human-readable root cause explanation
+
+## Potential Extensions
+
+Rolling historical baselines instead of single healthy snapshot
+
+Multi-day batch monitoring
+
+Real-time streaming integration
+
+Alerting integrations (Slack, email)
+
+LLM-assisted contextual explanations
+
+## Technologies Used
+
+Python
+
+Pandas
+
+NumPy
+
+Matplotlib (for visualization)

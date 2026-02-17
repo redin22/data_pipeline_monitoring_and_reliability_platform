@@ -25,7 +25,6 @@ Detects missing or unexpected columns
 
 Flags schema drift as a critical failure
 
-Treated as a hard override in severity classification
 
 2️⃣ Pipeline Health Metrics (Behavioral Monitoring)
 
@@ -37,7 +36,7 @@ null_rate → detects missing data
 
 invalid_rate → detects logically inconsistent values
 
-duplicate_rate → detects replay or duplication events
+duplicate_rate → detects duplication events
 
 lag_minutes → detects stale data
 
@@ -55,7 +54,7 @@ Null rate spike > 20%
 
 Invalid rate > 5× healthy baseline
 
-Freshness threshold breach
+Freshness threshold breach ->60 mins
 
 Duplicate rate escalation
 
@@ -68,8 +67,6 @@ A z-score–based anomaly detector compares behavioral metrics against a healthy
 Flags deviations exceeding ±3 standard deviations
 
 Detects subtle volume shifts and distribution drift
-
-Complements deterministic rules
 
 5️⃣ Hybrid Evaluation Engine
 

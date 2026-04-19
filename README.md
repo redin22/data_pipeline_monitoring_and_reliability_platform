@@ -42,7 +42,6 @@ lag_minutes → detects stale data
 
 avg_amount → detects distributional shifts
 
-Rolling-window metrics are also used to characterize healthy time-series behavior.
 
 3️⃣ Rule-Based Severity Classification
 
@@ -129,5 +128,3 @@ Python
 Pandas
 
 NumPy
-
-Matplotlib (for visualization)
